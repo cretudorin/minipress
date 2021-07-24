@@ -1,6 +1,5 @@
 import React from "react";
 import CategoryCard from "../components/CategoryCard";
-import Navbar from "../components/Navbar";
 import styles from '../styles/Home.module.css';
 
 const HomePage = () => {
