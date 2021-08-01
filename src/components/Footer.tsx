@@ -1,5 +1,5 @@
 import { Link } from '@material-ui/core';
-import styles from '../../styles/Footer.module.css';
+import styles from '@styles/Footer.module.css';
 
 export const Footer = () => {
     return (

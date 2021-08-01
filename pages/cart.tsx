@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useSelector, useDispatch } from 'react-redux';
 import { incrementQuantity, decrementQuantity, removeFromCart } from '../src/redux/cart.slice';
-import styles from '../styles/CartPage.module.css';
+import styles from '@styles/CartPage.module.css';
 
 const CartPage = () => {
 

@@ -1,6 +1,6 @@
 import React from "react";
 import CategoryCard from "../src/components/CategoryCard";
-import styles from '../styles/Home.module.css';
+import styles from '@styles/Home.module.css';
 
 const HomePage = () => {
     return (

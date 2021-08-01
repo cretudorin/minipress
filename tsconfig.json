@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
         "target": "es2016",
         "lib": [
             "dom",
@@ -17,7 +18,14 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "jsx": "preserve",
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "paths": {
+            "@*": ["/*"],
+            "@src": ["./src/*"],
+            "@styles": ["./styles/*"],
+            "@tests": ["./tests/*"],
+            "@pages": ["./pages/*"],
+        }
     },
     "include": [
         "next-env.d.ts",

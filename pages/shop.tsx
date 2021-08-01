@@ -1,5 +1,5 @@
 import ProductCard from '../src/components/ProductCard';
-import styles from '../styles/ShopPage.module.css';
+import styles from '@styles/ShopPage.module.css';
 import { getProducts } from './api/products/index';
 
 const ShopPage = ({ products }) => {

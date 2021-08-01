@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/cart.slice';
-import styles from '../../styles/ProductCard.module.css';
+import styles from '@styles/ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
 
