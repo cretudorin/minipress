@@ -11,7 +11,7 @@
         ],
         "allowJs": true,
         "skipLibCheck": true,
-        "strict": true,
+        "strict": false,
         "forceConsistentCasingInFileNames": true,
         "noEmit": true,
         "esModuleInterop": true,
@@ -22,7 +22,6 @@
         "jsx": "preserve",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "strictPropertyInitialization": true,
         "paths": {
             "@*": [ "/*" ],
             "@src": [ "./src/*" ],
