@@ -6,7 +6,10 @@ const Navbar = () => {
     const cart = useSelector((state: any) => state.cart);
 
     const getItemsCount = () => {
-        return cart.reduce((accumulator, item) => accumulator + item.quantity, 0);
+        return cart.reduce(
+            (accumulator, item) => accumulator + item.quantity,
+            0
+        );
     };
 
     return (

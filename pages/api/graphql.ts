@@ -1,11 +1,11 @@
 // Polyfill needed for type-graphql
-import "reflect-metadata";
+import 'reflect-metadata';
 
-import { ApolloServer } from "apollo-server-micro";
-import { buildSchema } from "type-graphql";
-import { IncomingMessage, ServerResponse } from "http";
+import { ApolloServer } from 'apollo-server-micro';
+import { buildSchema } from 'type-graphql';
+import { IncomingMessage, ServerResponse } from 'http';
 
-import { User, UserResolver } from "./lib/features/user";
+import { User, UserResolver } from './lib/features/user';
 
 export interface Context {
     user: User;
@@ -31,10 +31,10 @@ const getApolloServerHandler = async () => {
             resolvers: [UserResolver],
         });
         apolloServerHandler = new ApolloServer({ schema }).createHandler({
-            path: "/api/graphql",
-        })
+            path: '/api/graphql',
+        });
     }
     return apolloServerHandler;
 };
 
-export default async (req: IncomingMessage, res: ServerResponse) =>  (await getApolloServerHandler())(req, res);
+export default async (req: IncomingMessage, res: ServerResponse) =>(await getApolloServerHandler())(req, res);

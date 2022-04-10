@@ -3,24 +3,24 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-  }
-  .logo {
+}
+.logo {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
-  }
-  .links {
+}
+.links {
     display: flex;
-  }
-  .navlink {
+}
+.navlink {
     list-style: none;
     margin: 0 0.75rem;
     text-transform: uppercase;
-  }
-  .navlink a {
+}
+.navlink a {
     text-decoration: none;
     color: black;
-  }
-  .navlink a:hover {
+}
+.navlink a:hover {
     color: #f9826c;
-  }
+}

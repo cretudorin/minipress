@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "eslint:recommended"
+    ],
+    "globals": {
+        "React": "readonly"
+    },
+    "rules": {
+        "no-unused-vars": 0,
+        "@next/next/no-html-link-for-pages": 0
+    }
+}

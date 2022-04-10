@@ -1,21 +1,27 @@
-import { ClientSafeProvider, getProviders, signIn } from 'next-auth/client'
+import { ClientSafeProvider, getProviders, signIn } from 'next-auth/client';
 
-export default function SignIn({ providers }: { providers: ClientSafeProvider }) {
+export default function SignIn({
+    providers,
+}: {
+    providers: ClientSafeProvider;
+}) {
     return (
         <>
-            {Object.values(providers).map(provider => (
+            {Object.values(providers).map((provider) => (
                 <div key={provider.name}>
-                    <button onClick={() => signIn(provider.id)}>Sign in with {provider.name}</button>
+                    <button onClick={() => signIn(provider.id)}>
+                        Sign in with {provider.name}
+                    </button>
                 </div>
             ))}
         </>
-    )
+    );
 }
 
 // This is the recommended way for Next.js 9.3 or newer
 export async function getServerSideProps(context) {
-    const providers = await getProviders()
+    const providers = await getProviders();
     return {
-        props: { providers }
-    }
+        props: { providers },
+    };
 }

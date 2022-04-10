@@ -1,12 +1,12 @@
 on:
-  push:
-    branches:
-      - master
+    push:
+        branches:
+            - master
 jobs:
-  runNpmTarget:
-    name: Run NPM target
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Run NPM target
-      uses: anna-money/github-actions-npm@v2
+    runNpmTarget:
+        name: Run NPM target
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+            - name: Run NPM target
+              uses: anna-money/github-actions-npm@v2

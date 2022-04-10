@@ -23,20 +23,13 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "paths": {
-            "@*": [ "/*" ],
-            "@src": [ "./src/*" ],
-            "@styles": [ "./styles/*" ],
-            "@tests": [ "./tests/*" ],
-            "@pages": [ "./pages/*" ],
+            "@*": ["/*"],
+            "@src": ["./src/*"],
+            "@styles": ["./styles/*"],
+            "@tests": ["./tests/*"],
+            "@pages": ["./pages/*"]
         }
     },
-    "include": [
-        "next-env.d.ts",
-        "**/*.ts",
-        "**/*.tsx",
-        "next.config.js"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"],
+    "exclude": ["node_modules"]
 }

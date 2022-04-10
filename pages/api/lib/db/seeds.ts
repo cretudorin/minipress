@@ -1,13 +1,13 @@
-import { createConnection } from "./db";
+import { createConnection } from './db';
 
-import { seedDatabase } from "../features/user/user.factory";
+import { seedDatabase } from '../features/user/user.factory';
 
 const startupDatabase = async () => {
-  const databaseConnection = await createConnection();
+    const databaseConnection = await createConnection();
 
-  await seedDatabase(databaseConnection);
+    await seedDatabase(databaseConnection);
 
-  await databaseConnection.close();
+    await databaseConnection.close();
 };
 
 startupDatabase();

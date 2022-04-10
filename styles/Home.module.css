@@ -1,11 +1,11 @@
 .container {
     padding: 0 2rem;
-  }
-  .small {
+}
+.small {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  .large {
+}
+.large {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+}

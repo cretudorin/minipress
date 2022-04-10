@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import { useSelector, useDispatch } from 'react-redux';
-import { incrementQuantity, decrementQuantity, removeFromCart } from '../src/redux/cart.slice';
+import {
+    incrementQuantity,
+    decrementQuantity,
+    removeFromCart,
+} from '../src/redux/cart.slice';
 import styles from '@styles/CartPage.module.css';
 
 const CartPage = () => {
-
     const cart = useSelector((state: any) => state.cart);
     const dispatch = useDispatch();
 
@@ -32,19 +35,36 @@ const CartPage = () => {
                     {cart.map((item, index) => (
                         <div key={index} className={styles.body}>
                             <div className={styles.image}>
-                                <Image src={item.image} height="90" width="65" alt="" />
+                                <Image
+                                    src={item.image}
+                                    height="90"
+                                    width="65"
+                                    alt=""
+                                />
                             </div>
                             <p>{item.product}</p>
                             <p>$ {item.price}</p>
                             <p>{item.quantity}</p>
                             <div className={styles.buttons}>
-                                <button onClick={() => dispatch(incrementQuantity(item.id))}>
+                                <button
+                                    onClick={() =>
+                                        dispatch(incrementQuantity(item.id))
+                                    }
+                                >
                                     +
                                 </button>
-                                <button onClick={() => dispatch(decrementQuantity(item.id))}>
+                                <button
+                                    onClick={() =>
+                                        dispatch(decrementQuantity(item.id))
+                                    }
+                                >
                                     -
                                 </button>
-                                <button onClick={() => dispatch(removeFromCart(item.id))}>
+                                <button
+                                    onClick={() =>
+                                        dispatch(removeFromCart(item.id))
+                                    }
+                                >
                                     x
                                 </button>
                             </div>
