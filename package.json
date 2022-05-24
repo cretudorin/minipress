@@ -21,7 +21,7 @@
         "graphql": "^15.5.1",
         "micro": "^9.3.4",
         "next": "12",
-        "next-auth": "^3.27.3",
+        "next-auth": "^3.29.3",
         "react": "^18.0.0",
         "react-dom": "^18.0.0",
         "react-redux": "^7.2.4",
